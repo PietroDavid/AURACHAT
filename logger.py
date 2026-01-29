@@ -52,12 +52,12 @@ def generate_html_log():
     <meta charset="UTF-8">
     <title>Global Network Log</title>
     <style>
-        body { font-family: 'Courier New', monospace; background-color: #1e1e1e; color: #d4d4d4; padding: 20px; }
-        .log-entry { margin: 15px 0; padding: 10px; border-left: 4px solid; }
-        .log-entry.client { border-color: #4FC3F7; background-color: #2d3d4d; }
-        .log-entry.server { border-color: #81C784; background-color: #2d3d2d; }
+        body { font-family: 'Lucida Console', monospace; background-color: #0B2027; color: #5B7981; padding: 25px; }
+        .log-entry { margin: 15px 4px; padding: 10px; border-left: 6px solid; }
+        .log-entry.client { border-color: #E4B8B7; background-color: #583A38; }
+        .log-entry.server { border-color: #AAD2DA; background-color: #2D4B4F; }
         .field { margin: 5px 0; }
-        .label { font-weight: bold; color: #FFB74D; }
+        .label { font-weight: bold; color: #5B7981; }
         .timestamp { color: #CE93D8; }
         .sender { color: #4FC3F7; }
         .ip { color: #FFB74D; }
@@ -66,7 +66,7 @@ def generate_html_log():
     </style>
 </head>
 <body>
-    <h1>🖥️ Log</h1>
+    <h1>🖥️ Log generale</h1>
 """
         # Invertiamo l'ordine per vedere i messaggi più recenti in alto (opzionale, rimuovi [::-1] se non vuoi)
         messages = root.findall("message")

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<logs>
+    <message>
+        <timestamp>2026-01-29 10:20:45</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:20:45</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:27:26</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:27:26</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:29:47</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:29:47</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:30:15</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>vgfdg</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:30:15</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>Ciao 172.16.7.224, ho ricevuto: 'vgfdg'</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:30:16</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>hello</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:30:16</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>Ciao 172.16.7.224, ho ricevuto: 'hello'</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:30:19</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:30:19</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:31:04</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:31:04</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+</logs>
