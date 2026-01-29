@@ -126,7 +126,7 @@ def gestisci_client(client_socket, client_address):
                 generate_html_log()
 
             elif data.upper() == "NAME":
-                risposta = f"Sono il server: {socket.gethostname()}"
+                risposta = f"Sono il server {socket.gethostname()}"
                 client_socket.send(risposta.encode())
                 log_message(mittente="SERVER", ip=client_address[0], contenuto=risposta)
                 generate_html_log()

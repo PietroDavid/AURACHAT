@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Server Log</title>
+    <style>
+        body { font-family: 'Courier New', monospace; background-color: #1e1e1e; color: #d4d4d4; padding: 20px; }
+        .log-entry { margin: 15px 0; padding: 10px; border-left: 4px solid; }
+        .log-entry.client { border-color: #4FC3F7; background-color: #2d3d4d; }
+        .log-entry.server { border-color: #81C784; background-color: #2d3d2d; }
+        .field { margin: 5px 0; }
+        .label { font-weight: bold; color: #FFB74D; }
+        .timestamp { color: #CE93D8; }
+        .sender { color: #4FC3F7; }
+        .ip { color: #FFB74D; }
+        .contenuto { color: #d4d4d4; }
+        h1 { color: #81C784; }
+    </style>
+</head>
+<body>
+    <h1>🖥️ Server Log (Auto-Discovery)</h1>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:18</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">sdfgbdfg</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:18</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'sdfgbdfg'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:26</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">time</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:26</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">9:12:26</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:28</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">log</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:28</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'log'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:33</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">date</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:33</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'date'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:35</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">name</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:12:35</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Sono il server: W11STAT-7-224</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:13:35</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:13:35</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:17:57</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">sdfgdsfh</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:17:57</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'sdfgdsfh'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:18:02</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">hello sono io</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:18:02</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'hello sono io'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:18:04</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">cane gatto </span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:18:04</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'cane gatto '</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:18:08</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">code</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:18:08</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'code'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:18:09</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:18:09</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:26:26</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">dfhftsghf</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:26:26</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'dfhftsghf'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:26:27</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">fdgdfgfd</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:26:27</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'fdgdfgfd'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:26:29</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">yay</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:26:29</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'yay'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:26:32</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:26:32</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:27:41</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">rsegtrdgdfg</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:27:41</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'rsegtrdgdfg'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:27:42</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">fsdfsdf</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:27:42</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'fsdfsdf'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:27:45</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">hello gello</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:27:45</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'hello gello'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:27:47</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:27:47</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:29:02</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:29:02</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:30:25</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">dhbfd</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:30:25</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'dhbfd'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:30:26</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:30:27</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:38:34</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:38:34</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:57:35</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 09:57:35</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:02:47</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:02:47</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:03:37</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:03:37</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:04:39</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:04:39</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:05:01</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">hello</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:05:01</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">Ciao 172.16.7.224, ho ricevuto: 'hello'</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:05:02</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:05:02</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:06:24</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:06:24</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+    <div class="log-entry client">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:12:17</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">CLIENT</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">exit</span></div>
+    </div>
+    <div class="log-entry server">
+        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">2026-01-29 10:12:17</span></div>
+        <div class="field"><span class="label">SENDER:</span> <span class="sender">SERVER</span></div>
+        <div class="field"><span class="label">IP:</span> <span class="ip">172.16.7.224</span></div>
+        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">-1</span></div>
+    </div>
+</body>
+</html>

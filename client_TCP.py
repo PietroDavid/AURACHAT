@@ -39,17 +39,17 @@ def generate_html_log():
     <meta charset="UTF-8">
     <title>Client Log</title>
     <style>
-        body { font-family: 'Courier New', monospace; background-color: #1e1e1e; color: #d4d4d4; padding: 20px; }
+        body { font-family: 'Andale mono', monospace; background-color: #0B2027; color: #E4B8B7; padding: 20px; }
         .log-entry { margin: 15px 0; padding: 10px; border-left: 4px solid; }
-        .log-entry.client { border-color: #4FC3F7; background-color: #2d3d4d; }
-        .log-entry.server { border-color: #81C784; background-color: #2d3d2d; }
+        .log-entry.client { border-color: #E4B8B7; background-color: #401A18; }
+        .log-entry.server { border-color: #AAD2DA; background-color: #1B464D; }
         .field { margin: 5px 0; }
-        .label { font-weight: bold; color: #FFB74D; }
+        .label { font-weight: bold; color: #E4B8B7; }
         .timestamp { color: #CE93D8; }
         .sender { color: #4FC3F7; }
         .ip { color: #FFB74D; }
         .contenuto { color: #d4d4d4; }
-        h1 { color: #4FC3F7; }
+        h1 { color: #E4B8B7; }
     </style>
 </head>
 <body>
