@@ -3,75 +3,7 @@ import datetime
 import xml.etree.ElementTree as ET
 import os
 import threading
-
-def log_message(mittente, ip, contenuto, filename="utils\\log_server.xml"):
-    """Funzione per loggare messaggi in formato XML"""
-    os.makedirs("utils", exist_ok=True)
-    
-    if not os.path.exists(filename) or os.path.getsize(filename) == 0:
-        root = ET.Element("logs")
-        tree = ET.ElementTree(root)
-        tree.write(filename, encoding="utf-8", xml_declaration=True)
-
-    tree = ET.parse(filename)
-    root = tree.getroot()
-    message = ET.SubElement(root, "message")
-    ET.SubElement(message, "timestamp").text = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    ET.SubElement(message, "sender").text = mittente
-    ET.SubElement(message, "ip").text = ip
-    ET.SubElement(message, "contenuto").text = contenuto
-    ET.indent(tree, space="    ", level=0)
-    tree.write(filename, encoding="utf-8", xml_declaration=True)
-
-def generate_html_log():
-    """Genera un file HTML con i log colorati del SERVER"""
-    log_file = "utils\\log_server.xml"
-    html_file = "utils\\log_server.html"
-    
-    if not os.path.exists(log_file):
-        return
-    
-    tree = ET.parse(log_file)
-    root = tree.getroot()
-    
-    html_content = """<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Server Log</title>
-    <style>
-        body { font-family: 'Courier New', monospace; background-color: #1e1e1e; color: #d4d4d4; padding: 20px; }
-        .log-entry { margin: 15px 0; padding: 10px; border-left: 4px solid; }
-        .log-entry.client { border-color: #4FC3F7; background-color: #2d3d4d; }
-        .log-entry.server { border-color: #81C784; background-color: #2d3d2d; }
-        .field { margin: 5px 0; }
-        .label { font-weight: bold; color: #FFB74D; }
-        .timestamp { color: #CE93D8; }
-        .sender { color: #4FC3F7; }
-        .ip { color: #FFB74D; }
-        .contenuto { color: #d4d4d4; }
-        h1 { color: #81C784; }
-    </style>
-</head>
-<body>
-    <h1>🖥️ Server Log (Auto-Discovery)</h1>
-"""
-    
-    for message in root.findall("message"):
-        sender = message.find("sender").text
-        status_class = "client" if sender == "CLIENT" else "server"
-        html_content += f'    <div class="log-entry {status_class}">\n'
-        html_content += f'        <div class="field"><span class="label">TIMESTAMP:</span> <span class="timestamp">{message.find("timestamp").text}</span></div>\n'
-        html_content += f'        <div class="field"><span class="label">SENDER:</span> <span class="sender">{sender}</span></div>\n'
-        html_content += f'        <div class="field"><span class="label">IP:</span> <span class="ip">{message.find("ip").text}</span></div>\n'
-        html_content += f'        <div class="field"><span class="label">CONTENUTO:</span> <span class="contenuto">{message.find("contenuto").text}</span></div>\n'
-        html_content += '    </div>\n'
-    
-    html_content += """</body>
-</html>"""
-    
-    with open(html_file, "w", encoding="utf-8") as f:
-        f.write(html_content)
+from logger import log_message, generate_html_log
 
 def broadcast_server_presence(server_ip, tcp_port):
     """Trasmette in broadcast l'IP del server sulla rete locale"""
@@ -108,7 +40,6 @@ def gestisci_client(client_socket, client_address):
                 break
                 
             print(f"[{client_address}] Messaggio ricevuto: {data}")
-            log_message(mittente="CLIENT", ip=client_address[0], contenuto=data)
             generate_html_log()
             
             if data.upper() == "EXIT":
