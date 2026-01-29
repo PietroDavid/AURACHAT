@@ -84,4 +84,28 @@
         <ip>172.16.7.224</ip>
         <contenuto>-1</contenuto>
     </message>
+    <message>
+        <timestamp>2026-01-29 10:34:31</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:34:31</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:37:08</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:37:08</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
 </logs>

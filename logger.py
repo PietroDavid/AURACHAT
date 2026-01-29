@@ -57,16 +57,16 @@ def generate_html_log():
         .log-entry.client { border-color: #E4B8B7; background-color: #583A38; }
         .log-entry.server { border-color: #AAD2DA; background-color: #2D4B4F; }
         .field { margin: 5px 0; }
-        .label { font-weight: bold; color: #5B7981; }
+        .label { font-weight: bold; color: #F9E98A; }
         .timestamp { color: #CE93D8; }
         .sender { color: #4FC3F7; }
         .ip { color: #FFB74D; }
         .contenuto { color: #d4d4d4; }
-        h1 { color: #81C784; border-bottom: 1px solid #555; padding-bottom: 10px; }
+        h1 { color: #F9E98A; border-bottom: 1px solid #555; padding-bottom: 10px; }
     </style>
 </head>
 <body>
-    <h1>🖥️ Log generale</h1>
+    <h1>🖥️ Log</h1>
 """
         # Invertiamo l'ordine per vedere i messaggi più recenti in alto (opzionale, rimuovi [::-1] se non vuoi)
         messages = root.findall("message")
