@@ -86,7 +86,6 @@ try:
             break
 
         print(f"[SERVER] --> {data}")
-        log_message(mittente="SERVER", ip=SERVER_IP, contenuto=data)
         generate_html_log()
 
 except ConnectionRefusedError:
