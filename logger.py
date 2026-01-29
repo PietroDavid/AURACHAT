@@ -53,16 +53,16 @@ def generate_html_log():
     <title>Global Network Log</title>
     <style>
         body { font-family: 'Lucida Console', monospace; background-color: #0B2027; color: #5B7981; padding: 25px; }
-        .log-entry { margin: 15px 4px; padding: 10px; border-left: 6px solid; }
+        .log-entry { margin: 15px 4px; padding: 10px; border-left: 10px solid; }
         .log-entry.client { border-color: #E4B8B7; background-color: #583A38; }
         .log-entry.server { border-color: #AAD2DA; background-color: #2D4B4F; }
         .field { margin: 5px 0; }
-        .label { font-weight: bold; color: #F9E98A; }
-        .timestamp { color: #CE93D8; }
-        .sender { color: #4FC3F7; }
+        .label { font-weight: bold; color: #FFECAD; }
+        .timestamp { color: #FFA09E; }
+        .sender { color: #85EBFF; }
         .ip { color: #FFB74D; }
-        .contenuto { color: #d4d4d4; }
-        h1 { color: #F9E98A; border-bottom: 1px solid #555; padding-bottom: 10px; }
+        .contenuto { color: #ebeaea; }
+        h1 { color: #FFECAD; border-bottom: 4px solid #555; padding-bottom: 10px; }
     </style>
 </head>
 <body>

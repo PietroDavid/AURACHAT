@@ -91,8 +91,8 @@ print("=" * 60)
 print(" SERVER TCP CON AUTO-DISCOVERY")
 print("=" * 60)
 print(f" IP del server: {local_ip}")
-print(f" Porta TCP: 12345")
-print(f" Porta Broadcast: 37020")
+print(f" Porta TCP: 12345") #TODO cambiare porta TCP 
+print(f" Porta Broadcast: 37020") #TODO cambiare porta broadcast
 print("=" * 60)
 print()
 

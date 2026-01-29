@@ -108,4 +108,148 @@
         <ip>172.16.7.224</ip>
         <contenuto>-1</contenuto>
     </message>
+    <message>
+        <timestamp>2026-01-29 10:41:31</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>dsrfeaw</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:41:31</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>Ciao 172.16.7.224, ho ricevuto: 'dsrfeaw'</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:41:33</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:41:33</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:43:23</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:43:23</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:46:16</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:46:16</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:48:52</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>porco</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:48:52</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>Ciao 172.16.7.224, ho ricevuto: 'porco'</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:48:53</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:48:53</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:51:19</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>egerhge</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:51:19</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>Ciao 172.16.7.224, ho ricevuto: 'egerhge'</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:51:20</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>hello</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:51:20</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>Ciao 172.16.7.224, ho ricevuto: 'hello'</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:51:23</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:51:23</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:53:35</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:53:35</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:56:23</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>ergfadg</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:56:23</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>Ciao 172.16.7.224, ho ricevuto: 'ergfadg'</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:56:24</timestamp>
+        <sender>CLIENT</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>exit</contenuto>
+    </message>
+    <message>
+        <timestamp>2026-01-29 10:56:24</timestamp>
+        <sender>SERVER</sender>
+        <ip>172.16.7.224</ip>
+        <contenuto>-1</contenuto>
+    </message>
 </logs>
